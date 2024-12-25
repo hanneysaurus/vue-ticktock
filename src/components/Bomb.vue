@@ -76,9 +76,16 @@ const endBomb = () => {
 }
 
 .activate-button {
-  background: gold;
   font-size: 24px;
   font-weight: bold;
   font-family: "Bookman Old Style", serif;
+
+  border-radius: 10px;
+  border-color: white;
+
+  margin-top: 10px;
+
+  background: black;
+  color: gold;
 }
 </style>
