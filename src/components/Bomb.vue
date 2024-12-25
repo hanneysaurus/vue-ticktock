@@ -1,8 +1,11 @@
 <template>
-  <img
-      :src="imagePath"
-      alt="bomb"/>
-  <button ref="button" @click="handleClick">{{ isTicking ? 'STOP' : 'START' }}</button>
+  <div class="container">
+    <img
+        :src="imagePath"
+        alt="bomb"
+        class="image"/>
+    <button class="activate-button" @click="handleClick">{{ isTicking ? 'STOP' : 'START' }}</button>
+  </div>
 </template>
 
 <script lang="js" setup>
@@ -66,5 +69,16 @@ const endBomb = () => {
 </script>
 
 <style scoped>
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
+.activate-button {
+  background: gold;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Bookman Old Style", serif;
+}
 </style>
