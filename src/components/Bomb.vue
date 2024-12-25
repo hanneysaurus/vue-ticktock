@@ -81,9 +81,11 @@ const endBomb = () => {
   font-family: "Bookman Old Style", serif;
 
   border-radius: 10px;
-  border-color: white;
 
-  margin-top: 10px;
+  outline-offset: 5px;
+  outline: white 5px solid;
+
+  margin-top: 20px;
 
   background: black;
   color: gold;
